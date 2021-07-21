@@ -22,7 +22,7 @@ Inside students routes file, create routes to
   - render an ejs template
   - pass a student object to template for displaying student data
   ```js
-  res.render("studentDetail", {
+  res.render("studentDetails", {
     student: { name: "rahul", email: "rahul@altcampus.io" },
   });
   ```
