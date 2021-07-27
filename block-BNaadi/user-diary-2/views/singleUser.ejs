@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin: 2rem ;padding: 2rem; background-color: brown;">
+        <h2>Name : <%= user.name %></h2>
+        <h2>Email : <%= user.email %></h2>
+        <h2>Age : <%= user.age %></h2>
+        <h2>Bio : <%= user.bio %></h2>
+        <a href="/users" style="font-size: 1.5rem; color: chartreuse;">All users</a>
+        <a href="/" style="font-size: 1.5rem;padding-left: 2rem; color: chartreuse;">Home Page</a>
+        <a href="/users/<%= user.id %>/edit" style="font-size: 1.5rem;padding-left: 2rem; color: chartreuse;">Edit</a>
+        <a href="/users/<%= user.id %>/delete" style="font-size: 1.5rem;padding-left: 2rem; color: chartreuse;">Delete</a>
+    </div>
+</body>
+</html>
