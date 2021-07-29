@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/users/<%= user.id%>" method="POST">
+        <div>
+            Name
+            <input type="text" name="name" value="<%= user.name%>">
+        </div>
+        <div>
+            Email
+            <input type="email" name="email" value="<%= user.email%>">
+        </div>
+        <div>
+            Age
+            <input type="number" name="age" value="<%= user.age%>">.
+        </div>
+        <div>
+            Address
+            <input type="text" name="address" value="<%= user.address%>">
+        </div>
+        <div>
+            Bio
+            <input type="text" name="bio" value="<%= user.bio%>">
+        </div>
+        <div>
+            Hobbies
+            <input type="text" name="hobbies" id="" value="<%= user.hobbies%>">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div>
+        <a href="/users">Go back to User</a>
+    </div>
+</body>
+</html>
