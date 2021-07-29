@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All users</h1>
+    <% users.forEach(user => { %>
+        <div style="padding: 2rem; margin: 2rem 0; background-color: aqua;">
+            <h2><%= user.name%></h2>
+            <h2><%= user.email%></h2>
+            <h2><%= user.age%></h2>
+            <h2><%= user.address%></h2>
+            <h2><%= user.bio%></h2>
+            <h2><%= user.hobbies%></h2>
+            <a href="/users/<%= user.id%>">Get Details</a>
+
+        </div>
+    <% }) %>
+    <a href="/users/new">Add User</a>
+    <a href="/" style="padding-left:2rem ;">Home Page</a>
+</body>
+</html>
